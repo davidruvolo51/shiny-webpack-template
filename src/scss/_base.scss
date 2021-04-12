@@ -1,0 +1,39 @@
+// base: tag selector styles
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+    font-family: $font;
+}
+
+body {
+    background-color: $light;
+}
+
+// styles for text elements
+h1 {
+    padding: 0;
+    margin: 0;
+    line-height: $heading-line-height;
+    color: $dark;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    line-height: $body-line-height;
+    color: $medium;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+    box-shadow: $link-shadow;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

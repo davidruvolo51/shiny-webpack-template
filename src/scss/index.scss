@@ -1,0 +1,39 @@
+// import variables first
+@import "_variables";
+
+// load other component-based files
+@import "_base" , "_lists";
+
+
+// define other styles here
+#rlogo {
+    width: 125px;   // modify the width; try 200px, 400px, 25px, etc
+    margin: 16px auto;
+
+    // uncomment below for a suprise
+    // filter: grayscale(1);
+}
+
+.main {
+    width: 90%;
+    margin: 32px auto;
+
+    h1 {
+        text-align: center; // change to: left or right
+    }
+
+    // uncomment this 
+    // a {
+    //     color: $red;
+    // }
+}
+
+@media (min-width: $breakpoint) {
+    .main {
+        max-width: $breakpoint;
+        box-sizing: content-box;
+        padding: 2em;
+        background-color: #ffffff;
+        border-radius: $default-border-radius;
+    }
+}
