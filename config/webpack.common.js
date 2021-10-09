@@ -2,7 +2,7 @@
 // FILE: webpack.common.js
 // AUTHOR: David Ruvolo
 // CREATED: 2020-04-12
-// MODIFIED: 2020-04-12
+// MODIFIED: 2021-10-09
 // PURPOSE: configuration to be used in prod and dev
 // DEPENDENCIES: see below
 // STATUS: working
@@ -54,6 +54,8 @@ module.exports = {
                     // },
                     // Translates CSS into CommonJS
                     "css-loader",
+                    // Processes via PostCSS
+                    "postcss-loader",
                     // Compiles Sass to CSS
                     "sass-loader",
                 ]

@@ -2,7 +2,7 @@
 // FILE: webpack.dev.js
 // AUTHOR: David Ruvolo
 // CREATED: 2021-04-12
-// MODIFIED: 2021-04-12
+// MODIFIED: 2021-10-09
 // PURPOSE: configuration for dev environment
 // DEPENDENCIES: see below + common config
 // STATUS: working
@@ -20,6 +20,8 @@ module.exports = {
     devServer: {
         port: 1234,
         hot: true,
-        writeToDisk: true // for use in shiny-dev
+        devMiddleware: {
+            writeToDisk: true // for use in shiny-dev
+        }
     }
 }
