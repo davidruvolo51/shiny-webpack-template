@@ -44,21 +44,24 @@ app_ui <- function() {
         ### BUILD YOUR UI HERE: fluidPage, tabPanel, etc.
         tags$main(
             class = "main",
-            tags$img(
-                id = "rlogo",
-                src = "images/Rlogo.png",
-                alt = "The Comprehensive R Archive Network"
-            ),
-            tags$h1("Shiny + Webpack"),
-            tags$p(
-                "This demo shiny app provides an example for integrating ",
-                "Shiny with the application bundler",
-                tags$a(
-                    href = "https://webpack.js.org",
-                    "Webpack"
+            tags$div(
+                class = "main-content",
+                tags$img(
+                    id = "rlogo",
+                    src = "images/Rlogo.png",
+                    alt = "The Comprehensive R Archive Network"
                 ),
-                ". This is useful for optimizing CSS and JavaScript assets,",
-                "as well as utilizing frontend tooling. "
+                tags$h1("Shiny + Webpack"),
+                tags$p(
+                    "This demo shiny app provides an example for integrating ",
+                    "Shiny with the application bundler",
+                    tags$a(
+                        href = "https://webpack.js.org",
+                        "Webpack"
+                    ),
+                    ". This is useful for optimizing CSS and JavaScript assets,",
+                    "as well as utilizing frontend tooling. "
+                )
             )
         ),
 
