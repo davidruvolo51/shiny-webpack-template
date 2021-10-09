@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "shiny": "Rscript app.R",
     "start": "webpack serve --env dev",
     "build": "webpack --env prod",
     "test": "echo \"Error: no test specified\" && exit 1"
