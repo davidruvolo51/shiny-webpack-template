@@ -4,7 +4,7 @@ The `shiny-webpack-template` contains the basic structure for creating Shiny app
 
 - ✨ Sass enabled
 - 🔥 Hot Module Replacement
-- 📦 Shiny as a Package ([Golem](https://github.com/ThinkR-open/golem) style project structure)
+- 📦 Bundling your shiny as an R package
 - 😍 And much more!
 
 This application uses the following tools.
@@ -50,17 +50,16 @@ pnpm install
 
 If you prefer to use `npm`, use `npm` instead of `pnpm`.
 
-### 4. Start the development servers
+### 4. Working in development mode
 
-When everything is installed, start the parcel. Run the following command. Parcel will run on `localhost:1234` (the default).
+For developing your application, I recommend creating two terminals in the same window. Use one to run the Shiny and the other to run node. Use the following scripts to start the dev servers.
 
 ```shell
-yarn dev
+yarn start  # node
+yarn shiny  # shiny
 ```
 
-Next, start a new R session. If you are using vscode, create a new second terminal. Open the `app.R` file and run both commands. This will run shiny at port `8000`.
-
-Open your browser and type `http://localhost:8000`.
+The application will be served at `http://localhost:8000`.
 
 ### 5. Building for production
 
