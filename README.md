@@ -4,6 +4,7 @@ The `shiny-webpack-template` contains the basic structure for creating Shiny app
 
 - ✨ Sass enabled
 - 🔥 Hot Module Replacement
+- 📚 Development and production environments
 - 📦 Bundling your shiny as an R package
 - 😍 And much more!
 
